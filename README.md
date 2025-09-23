@@ -37,7 +37,7 @@ Binchat/
 │   └── rsa_private       # RSA private key in PEM format
 ├── build/
 │   ├── server            # Server executable binary
-│   └── client            # Cerver executable binary
+│   └── client            # Client executable binary
 ├── build.sh              # Build script for compiling the project
 └── README.md             # Project documentation
 ```
