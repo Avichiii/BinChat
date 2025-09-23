@@ -7,19 +7,15 @@
 char *packets[] = {
     "init_pkt",         // Initial handshake packet sent by client to server
     "init_ack_pkt",     // Acknowledgment from server confirming handshake
-    "data_pkt",         // Packet representing standard data/message transfer
-    "data_ack_pkt",     // Acknowledgment for received data
-    "broadcast_pkt",    // Packet used when server broadcasts message to multiple clients
-    "connection_close_pkt" // Packet indicating that a client/server connection is being closed
 };
 
 // Absolute path to the server's private RSA key file
 // Used for decrypting incoming session keys and signing messages securely
-char *PATH_TO_PRIVET_KEY = "/root/Desktop/CtfPreparation-main/Miscellaneous/NetworkProgramming in C/Encrypted Chat Application/BinChat/keys/key_rsa";
+char *PATH_TO_PRIVET_KEY = "key_rsa";
 
 // Absolute path to the server's public RSA key file
 // Sent to clients during session initialization to encrypt session keys
-char *PATH_TO_PUBLIC_KEY = "/root/Desktop/CtfPreparation-main/Miscellaneous/NetworkProgramming in C/Encrypted Chat Application/BinChat/keys/key_rsa.pem";
+char *PATH_TO_PUBLIC_KEY = "key_rsa.pem";
 
 // Array holding information about currently connected clients
 // Each element contains the client's socket, name, and encryption session key
