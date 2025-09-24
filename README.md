@@ -48,6 +48,22 @@ Binchat/
 
 
 ### How to run
+> Firstly Generate Keys
+
+```sh
+# Here we are generating 2048bit key.
+ssh-keygen -t rsa -b 2048 -f key_rsa
+```
+
+> Convert them to PEM Format
+
+```sh
+ssh-keygen -f key_rsa.pub -e -m PEM > key_rsa.pem # public key
+ssh-keygen -p -m PEM -f key_rsa                   # private key
+```
+> Edit globals.c file with the location of the newly created keys.
+
+> Clone the repo and run build.sh file.
 ```sh
 git clone https://github.com/Avichiii/BinChat.git
 cd BinChat
